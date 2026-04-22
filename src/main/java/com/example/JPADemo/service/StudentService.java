@@ -39,6 +39,7 @@ public class StudentService {
 
     public void deleteStudent(int rno) {
         studentrepo.deleteById(rno);
+        // delete by ID
     }
 }
 
