@@ -42,4 +42,11 @@ public class StudentController {
         return "delete done";
     }
 
+//    creating own method
+        @GetMapping("/student/technology/{tech}")
+        public List<Student> getStudentByTechnology(@PathVariable("tech") String technology){
+            return studentservice.getStudentByTechnology(technology);
+    }
 }
+
+

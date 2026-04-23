@@ -41,5 +41,9 @@ public class StudentService {
         studentrepo.deleteById(rno);
         // delete by ID
     }
+
+    public List<Student> getStudentByTechnology(String technology) {
+        return studentrepo.findByTechnology(technology);
+    }
 }
 
